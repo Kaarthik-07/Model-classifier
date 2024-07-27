@@ -1,21 +1,19 @@
 import React, { useState } from "react";
-import Quiz from "../Quiz/Quiz";
 import axios from "axios";
 import "../Quiz/Quiz.css";
 import Footer from "../Footer";
+import UserCredentialsForm from "./user";
+import Quiz from "../Quiz/Quiz";
 
-const QuizContainer = ({ quizzes ,model }) => {
+const QuizContainer = ({ quizzes, model }) => {
   const [currentQuizIndex, setCurrentQuizIndex] = useState(0);
   const [quizResults, setQuizResults] = useState([]);
   const [showres, setShowres] = useState(true);
-  const quizNames = [
-    "Extraversion Test",
-    "Conscientiousness",
-    "Aptitude",
-    "Domain",
-  ];
-  const [inputFeatures, setInputFeatures] = useState([]);
   const [prediction, setPrediction] = useState("");
+  const [predictionLabel, setPredictionLabel] = useState(""); // Added state for prediction_label
+  const [userData, setUserData] = useState(null);
+  
+  const quizNames = ["Extraversion Test", "Conscientiousness", "Aptitude", "Domain"];
 
   const handleQuizEnd = (correctAnswers, totalQuestions) => {
     const score = (correctAnswers * 100) / totalQuestions;
@@ -25,59 +23,91 @@ const QuizContainer = ({ quizzes ,model }) => {
       setCurrentQuizIndex(currentQuizIndex + 1);
     } else {
       setShowres(false);
+      // Store user data in local storage
+      if (userData) {
+        localStorage.setItem('user_data', JSON.stringify(userData));
+      }
     }
   };
 
   const getPrediction = async () => {
-    const response = await axios.post(
-      `https://vashisht-careerx.onrender.com/${model}`,
-      {
-        input_features: quizResults,
-        
-      }
-    );
-    setPrediction(response.data.prediction_label);
+    try {
+      const response = await axios.post(
+        `https://vashisht-careerx.onrender.com/${model}`,
+        { input_features: quizResults }
+      );
+      console.log(response.data);
+      const predictionLabel = response.data.prediction_label;
+      setPrediction(predictionLabel);
+      setPredictionLabel(predictionLabel); // Store prediction_label
+    } catch (error) {
+      console.error('Error getting prediction:', error);
+    }
+  };
+
+  const handleUserDataSubmit = (data) => {
+    setUserData(data);
+    localStorage.setItem('user_data', JSON.stringify(data));
+  };
+
+  const handleSubmit = () => {
+    console.log("Submit");
+    console.log(userData);
+    console.log(quizResults);
+    console.log(prediction);
+    console.log(predictionLabel);
+
+    // Save results to local storage
+    localStorage.setItem('user_data', JSON.stringify(userData));
+    localStorage.setItem('quiz_results', JSON.stringify(quizResults));
+    localStorage.setItem('prediction', prediction);
+    localStorage.setItem('prediction_label', predictionLabel);
   };
 
   return (
     <div>
       {showres ? (
-        <Quiz ques={quizzes[currentQuizIndex]} onEnd={handleQuizEnd} />
+        <>
+          <UserCredentialsForm onSubmit={handleUserDataSubmit} />
+          <Quiz ques={quizzes[currentQuizIndex]} onEnd={handleQuizEnd} />
+        </>
       ) : (
         <div className="quiz-container">
-          Your Result For the tests :
+          Your Result For the tests:
           <ul>
             {quizResults.map((item, index) => (
-              <li className="quiz-result-ex">
+              <li className="quiz-result-ex" key={index}>
                 <div className="quiz-result-name">{quizNames[index]}</div>
-                <div className="quiz-result-result" key={index}>
-                  {item}
-                </div>
+                <div className="quiz-result-result">{item}</div>
               </li>
             ))}
           </ul>
           <div className="quiz-result-buttons">
-
-          
-          <button onClick={getPrediction}>Predict</button>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeF6pXqA8XJjGDdKrCJIbEwdeRKIye3SEhD7KwYeq39fNePEA/viewform?embedded=true" target="_blank">
-          <button>feedback form</button>
-          </a>
-          
+            <button onClick={getPrediction}>Predict</button>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeF6pXqA8XJjGDdKrCJIbEwdeRKIye3SEhD7KwYeq39fNePEA/viewform?embedded=true"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>Feedback Form</button>
+            </a>
           </div>
           <p className="quiz-result-desc">
             {prediction === "" ? (
               <p></p>
             ) : prediction === "Capable" ? (
-              <p >Congratulations on your remarkable achievement! Your qualification in the test speaks volumes about your dedication and competence. Wishing you continued success and fulfillment as you embark on this journey.</p>
+              <p>
+                Congratulations on your remarkable achievement! Your qualification in the test speaks volumes about your dedication and competence. Wishing you continued success and fulfillment as you embark on this journey.
+              </p>
             ) : (
-              <p className="nc">Though you haven't yet reached the qualification mark for that specific domain, your dedication to improving in aptitude, personality, and academics is commendable. Keep up the excellent work, and your efforts will surely yield success</p>
+              <p className="nc">
+                Though you haven't yet reached the qualification mark for that specific domain, your dedication to improving in aptitude, personality, and academics is commendable. Keep up the excellent work, and your efforts will surely yield success.
+              </p>
             )}
           </p>
-          
-          <Footer/>
+          <button onClick={handleSubmit}>Submit</button>
+          <Footer />
         </div>
-        
       )}
     </div>
   );

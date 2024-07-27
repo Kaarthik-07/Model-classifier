@@ -19,7 +19,7 @@ const LandingPage = () => {
         <Link to = "/doctor" className='lp-buttons'>Doctor</Link>
         <Link to = "/engineer" className='lp-buttons'>Engineer</Link>
         <Link to = "/ca" className='lp-buttons'>Chartered Accountant</Link>
-        
+        <Link to = "/frontend" className='lp-buttons'>Frontend</Link>
 
     </div>
 

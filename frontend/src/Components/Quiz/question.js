@@ -498,6 +498,242 @@ export const exampleQB = [
   
 
 ];
+export const frontendQB = [
+  {
+    category: "Frontend Design",
+    questions: [
+      {
+        question: "How familiar are you with responsive web design?",
+        choices: [
+          "Not familiar",
+          "A little familiar",
+          "Moderately familiar",
+          "Quite familiar",
+          "Very familiar",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "Which CSS preprocessor do you prefer to use?",
+        choices: ["None", "Sass", "LESS", "Stylus", "Other"],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "How do you approach cross-browser compatibility issues?",
+        choices: [
+          "I don’t address them",
+          "I use CSS resets",
+          "I use browser-specific CSS prefixes",
+          "I use tools like Autoprefixer",
+          "I use virtual machines for testing",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "What are your preferred methods for optimizing website performance?",
+        choices: [
+          "Image compression",
+          "Minification of CSS/JS",
+          "Code splitting",
+          "Lazy loading",
+          "All of the above",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "Which CSS framework do you prefer?",
+        choices: ["None", "Bootstrap", "Tailwind CSS", "Foundation", "Bulma"],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      // ... 10 more questions on Frontend Design
+    ],
+  },
+  {
+    category: "Frontend Usability",
+    questions: [
+      {
+        question: "How important is accessibility in your development process?",
+        choices: [
+          "Not important",
+          "Somewhat important",
+          "Moderately important",
+          "Quite important",
+          "Very important",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "How often do you test your websites for usability?",
+        choices: [
+          "Never",
+          "Rarely",
+          "Sometimes",
+          "Often",
+          "Always",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "What tools do you use for usability testing?",
+        choices: ["None", "Google Analytics", "Hotjar", "UserTesting", "Other"],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "What is your approach to ensuring a good user experience (UX)?",
+        choices: [
+          "User surveys",
+          "A/B testing",
+          "Heatmaps",
+          "Feedback from usability tests",
+          "All of the above",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "How do you ensure that your designs are user-friendly?",
+        choices: [
+          "Designing based on best practices",
+          "Conducting user research",
+          "Prototyping and user testing",
+          "Using UX guidelines",
+          "All of the above",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      // ... 10 more questions on Frontend Usability
+    ],
+  },
+  {
+    category: "Frontend Performance",
+    questions: [
+      {
+        question: "How do you handle performance bottlenecks in your applications?",
+        choices: [
+          "Profiling and debugging",
+          "Code refactoring",
+          "Caching",
+          "Optimizing assets",
+          "All of the above",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "Which method do you prefer for optimizing JavaScript performance?",
+        choices: [
+          "Minification",
+          "Code splitting",
+          "Debouncing/throttling",
+          "Asynchronous loading",
+          "All of the above",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "How often do you audit your website’s performance?",
+        choices: [
+          "Never",
+          "Occasionally",
+          "Regularly",
+          "Whenever I notice issues",
+          "Always",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "What tools do you use for performance testing?",
+        choices: [
+          "Google Lighthouse",
+          "WebPageTest",
+          "GTmetrix",
+          "Chrome DevTools",
+          "Other",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "What strategies do you use to optimize image loading?",
+        choices: [
+          "Image compression",
+          "Lazy loading",
+          "Responsive images",
+          "Using a CDN",
+          "All of the above",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      // ... 10 more questions on Frontend Performance
+    ],
+  },
+  {
+    category: "Modern Practices",
+    questions: [
+      {
+        question: "Which JavaScript framework or library do you prefer?",
+        choices: ["None", "React", "Vue", "Angular", "Svelte"],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "How do you manage state in your frontend applications?",
+        choices: [
+          "Local state",
+          "Context API",
+          "Redux",
+          "MobX",
+          "Other",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "What is your approach to handling asynchronous operations in JavaScript?",
+        choices: [
+          "Callbacks",
+          "Promises",
+          "Async/await",
+          "Observables",
+          "All of the above",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "Which build tool or task runner do you use most frequently?",
+        choices: ["None", "Webpack", "Vite", "Parcel", "Rollup"],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "How do you manage and maintain your frontend codebase?",
+        choices: [
+          "Version control",
+          "Code reviews",
+          "Automated testing",
+          "Continuous integration",
+          "All of the above",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      // ... 10 more questions on Modern Practices
+    ],
+  },
+];
 
 export const engineeringQB = [
   {
@@ -1378,4 +1614,379 @@ export const accQB = [
     ]
     
     }
+];
+
+
+
+
+export const frontendQb = [
+  {
+    category: "Extraversion",
+    questions: [
+      {
+        question: "How much do you enjoy spending time with friends?",
+        choices: [
+          "Not at all",
+          "A little bit",
+          "Moderately",
+          "Quite a bit",
+          "Very much",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "How comfortable are you in large groups of people (e.g., parties, events)?",
+        choices: [
+          "Very uncomfortable",
+          "Uncomfortable",
+          "Neutral",
+          "Comfortable",
+          "Very comfortable",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question:
+          "Do you usually start conversations with people you don't know well?",
+        choices: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "How often do you feel excited and full of energy?",
+        choices: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "How willing are you to try new activities or adventures?",
+        choices: [
+          "Not willing at all",
+          "A little willing",
+          "Somewhat willing",
+          "Very willing",
+          "Extremely willing",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+    ],
+  },
+  {
+    category: "Conscientiousness",
+    questions: [
+      {
+        question:
+          "How important is it for you to plan and organize your tasks or activities?",
+        choices: [
+          "Not important at all",
+          "A little important",
+          "Moderately important",
+          "Very important",
+          "Extremely important",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question: "How often are you punctual for appointments or deadlines?",
+        choices: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question:
+          "How much do you pay attention to small details in your work or tasks?",
+        choices: [
+          "Not at all",
+          "A little bit",
+          "Moderately",
+          "Quite a bit",
+          "Very much",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question:
+          "How dependable and responsible do you consider yourself to be?",
+        choices: [
+          "Not at all",
+          "A little bit",
+          "Moderately",
+          "Quite a bit",
+          "Very much",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+      {
+        question:
+          "When faced with a challenging task, how likely are you to keep working until it's completed?",
+        choices: [
+          "Not likely at all",
+          "A little likely",
+          "Somewhat likely",
+          "Very likely",
+          "Extremely likely",
+        ],
+        type: "MCQ",
+        correctAnswer: " ",
+      },
+    ],
+  },
+  {
+    category: "Aptitude",
+    questions: [
+      {
+        question: "If the price of a shirt is increased by 20%, by how much percent should its consumption be reduced so that the expenditure remains the same?",
+        choices: ["16.67%", "14.32%", "16.50%", "12.84%"],
+        type: "MCQs",
+        correctAnswer: "16.67%"
+      },
+      {
+        question: "The ratio of boys to girls in a class is 3:5. If there are 36 girls, how many boys are there in the class?",
+        choices: ["20", "15", "22", "27"],
+        type: "MCQs",
+        correctAnswer: "22"
+      },
+      {
+        question: "A shopkeeper sells an article at a profit of 20%. If the cost price is Rs.250, what is the selling price?",
+        choices: ["500", "300", "50", "450"],
+        type: "MCQs",
+        correctAnswer: "300"
+      },
+      {
+        question: "A bag contains 4 red balls and 6 blue balls. Two balls are drawn at random. What is the probability that both balls are red?",
+        choices: ["⅓", "⅘", "2/15", "6/21"],
+        type: "MCQs",
+        correctAnswer: "2/15"
+      },
+      {
+        question: "If 12 workers can build a wall in 9 days, how many days will it take for 8 workers to build the same wall?",
+        choices: ["12 days", "10 days", "8 days", "13.5 days"],
+        type: "MCQs",
+        correctAnswer: "13.5 days"
+      },
+      {
+        question: "Which of the following is the most likely conclusion to be drawn from the following statements? Statement 1: All cats are mammals; Statement 2: Some mammals are furry.",
+        choices: ["All mammals are furry.", "Some cats are furry.", "Some furry animals are cats.", "All furry animals are mammals.", "None of the above."],
+        type: "MCQs",
+        correctAnswer: "Some furry animals are cats."
+      },
+      {
+        question: "Which of the following is the most logical inference from the following statements? Statement 1: If it is raining, then the ground is wet; Statement 2: The ground is wet.",
+        choices: ["It is raining.", "It is not raining.", "The ground is not wet.", "Both (a) and (b) are possible.", "None of the above."],
+        type: "MCQs",
+        correctAnswer: "It is raining."
+      },
+      {
+        question: "Which of the following is the most logical sequence of events? The sun rises; The birds start singing; People wake up; The flowers open.",
+        choices: ["1, 2, 3, 4", "2, 1, 3, 4", "3, 1, 2, 4", "4, 1, 2, 3", "None of the above."],
+        type: "MCQs",
+        correctAnswer: "1, 2, 3, 4"
+      },
+      {
+        question: "Which of the following is the most accurate analogy to ‘A dog is to a puppy as a cat is to’:",
+        choices: ["A kitten", "A mouse", "A lion", "A cheetah", "None of the above."],
+        type: "MCQs",
+        correctAnswer: "A kitten"
+      },
+      {
+        question: "Which of the following is the most logical definition of the word mammal?",
+        choices: ["A warm-blooded animal that gives birth to live young.", "A cold-blooded animal that lays eggs.", "An animal that has fur or hair.", "An animal that has four legs.", "None of the above."],
+        type: "MCQs",
+        correctAnswer: "A warm-blooded animal that gives birth to live young."
+      },
+      {
+        question: "Various terms of an alphabet series are given with one or more terms missing. Select the missing terms from the choices. AZ, GT, MN, ?, YB.",
+        choices: ["KF", "RX", "SH", "TS"],
+        type: "MCQs",
+        correctAnswer: "SH"
+      },
+      {
+        question: "Poles: Magnet::? : Battery",
+        choices: ["Energy", "Power", "Terminals", "Cells"],
+        type: "MCQs",
+        correctAnswer: "Terminals"
+      },
+      {
+        question: "Kamal pointed to a photograph and says. 'The lady in the photograph is my nephew's maternal grandmother.' How is the lady in the picture related to the Kamla's sister if he has no sister of his own?",
+        choices: ["Mother-in-law", "Cousin", "Sister-in-law", "Mother", "Aunt"],
+        type: "MCQs",
+        correctAnswer: "Mother"
+      },
+      {
+        question: "An accurate clock shows 8 am. Through how may degrees will the hour hand rotate when the clock shows 2 pm?",
+        choices: ["154°", "172", "130°", "160°", "180°"],
+        type: "MCQs",
+        correctAnswer: "180°"
+      },
+  
+
+
+    ]
+  },
+  {
+    "category": "Domain Test",
+    "questions": [
+      {
+        "question": "Which of the following is used to style HTML elements?",
+        "choices": [
+          "JavaScript",
+          "CSS",
+          "HTML",
+          "SQL"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "CSS"
+      },
+      {
+        "question": "What does the 'box-sizing' property in CSS do?",
+        "choices": [
+          "Defines how the browser calculates the width and height of elements",
+          "Controls the overflow of content",
+          "Sets the size of font and text",
+          "Specifies the spacing between elements"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Defines how the browser calculates the width and height of elements"
+      },
+      {
+        "question": "Which HTML element is used to create a form?",
+        "choices": [
+          "<form>",
+          "<input>",
+          "<div>",
+          "<button>"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "<form>"
+      },
+      {
+        "question": "What is the purpose of the 'alt' attribute in an <img> tag?",
+        "choices": [
+          "To specify an alternative text for the image if it cannot be displayed",
+          "To add a tooltip to the image",
+          "To define the size of the image",
+          "To create a link to another page"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "To specify an alternative text for the image if it cannot be displayed"
+      },
+      {
+        "question": "How can you include external JavaScript files in an HTML document?",
+        "choices": [
+          "<script src='filename.js'></script>",
+          "<js src='filename.js'></js>",
+          "<include src='filename.js'></include>",
+          "<link href='filename.js' rel='script'>"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "<script src='filename.js'></script>"
+      },
+      {
+        "question": "Which CSS property is used to change the text color of an element?",
+        "choices": [
+          "color",
+          "text-color",
+          "font-color",
+          "background-color"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "color"
+      },
+      {
+        "question": "What does the 'flex-direction' property do in CSS Flexbox?",
+        "choices": [
+          "Defines the direction items are placed in the flex container",
+          "Sets the alignment of items in the flex container",
+          "Specifies the spacing between items in the flex container",
+          "Controls the size of items in the flex container"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Defines the direction items are placed in the flex container"
+      },
+      {
+        "question": "Which of the following methods can be used to make a web page responsive?",
+        "choices": [
+          "Using media queries",
+          "Applying fixed widths",
+          "Setting viewport meta tags",
+          "All of the above"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "All of the above"
+      },
+      {
+        "question": "What is the purpose of 'localStorage' in JavaScript?",
+        "choices": [
+          "To store data locally in the user's browser",
+          "To send data to a remote server",
+          "To store files on the user's computer",
+          "To cache data for offline access"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "To store data locally in the user's browser"
+      },
+      {
+        "question": "Which HTML5 element is used to define a navigation menu?",
+        "choices": [
+          "<nav>",
+          "<menu>",
+          "<sidebar>",
+          "<navigation>"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "<nav>"
+      },
+      {
+        "question": "What does the 'fetch' API do in JavaScript?",
+        "choices": [
+          "Makes network requests to retrieve data",
+          "Fetches data from the local storage",
+          "Updates the content of an element",
+          "Handles form submissions"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Makes network requests to retrieve data"
+      },
+      {
+        "question": "Which of the following is a valid CSS selector?",
+        "choices": [
+          ".class-name",
+          "#id-name",
+          "element",
+          "All of the above"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "All of the above"
+      },
+      {
+        "question": "How can you center a block element horizontally using CSS?",
+        "choices": [
+          "Setting the margin to 'auto'",
+          "Using the 'text-align' property",
+          "Applying 'position: absolute' with 'left: 50%'",
+          "Using 'float: center'"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Setting the margin to 'auto'"
+      },
+      {
+        "question": "What is the purpose of the 'z-index' property in CSS?",
+        "choices": [
+          "Controls the stacking order of positioned elements",
+          "Sets the size of an element",
+          "Defines the font size of an element",
+          "Specifies the background color of an element"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Controls the stacking order of positioned elements"
+      }
+    ]
+  }
+  
 ];

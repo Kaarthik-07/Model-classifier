@@ -49,3 +49,11 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))  # if 'PORT' env var is not found, default to 5000
     
     app.run(host='0.0.0.0', port=port)
+# def check_pickle_file(file_path):
+#     with open(file_path, 'rb') as file:
+#         header = file.read(4)  # Read the first 4 bytes
+#         if header == b'\x80\x03':  # This is a common pickle header for Python 3
+#             return True
+#         return False
+
+# print("Is valid pickle file:", check_pickle_file('doctor_model.pkl'))
